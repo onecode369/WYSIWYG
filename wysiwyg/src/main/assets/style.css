@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+
+html {
+  height: 100%;
+}
+
+body {
+  overflow: scroll;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  min-height:100%;
+}
+
+#editor {
+  display: table-cell;
+  outline: 0px solid transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#editor[placeholder]:empty:not(:focus):before {
+  content: attr(placeholder);
+  opacity: .5;
+}}

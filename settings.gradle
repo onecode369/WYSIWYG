@@ -1,0 +1,2 @@
+include ':app', ':wysiwyg'
+rootProject.name='WYSIWYG_Sample'
