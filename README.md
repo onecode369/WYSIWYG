@@ -3,6 +3,15 @@
 
 ``WYSIWYG`` is a ``Rich Text Editor`` for ``Android`` made in ``Kotlin``
 
+## Demo
+
+<img src="https://github.com/onecode369/WYSIWYG/blob/master/docs/GIF-200210_225312.gif" width="25%"/>
+
+Toolbar Preview
+
+
+<img src="https://github.com/onecode369/WYSIWYG/blob/master/docs/20200210_200910.gif" width="25%"/>
+
 ## Supported Functions
 
 <img src="https://i.postimg.cc/yNY3G3xM/correct.png" width="2%"/> Undo <br/>
