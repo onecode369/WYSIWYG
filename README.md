@@ -41,6 +41,7 @@ Toolbar Preview
 <img src="https://i.postimg.cc/yNY3G3xM/correct.png" width="2%"/> Quote <br/>
 <img src="https://i.postimg.cc/yNY3G3xM/correct.png" width="2%"/> Insert Image <br/>
 <img src="https://i.postimg.cc/yNY3G3xM/correct.png" width="2%"/> Insert Link <br/>
+<img src="https://i.postimg.cc/yNY3G3xM/correct.png" width="2%"/> Insert Code <br/>
 <img src="https://i.postimg.cc/yNY3G3xM/correct.png" width="2%"/> Todolist List <br/>
 
 ## Changeable Atributes of Editor
