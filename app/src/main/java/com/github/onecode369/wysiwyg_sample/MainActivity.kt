@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        supportActionBar?.title = "WYSIWYG Editor"
+
         val wysiwygEditor = editor as WYSIWYG
         wysiwygEditor.setEditorHeight(200)
         wysiwygEditor.setEditorFontSize(16)

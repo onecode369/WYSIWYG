@@ -91,11 +91,15 @@ editor.setItalic = function() {
 }
 
 editor.setSubscript = function() {
-    document.execCommand('subscript', false, null);
+    if(window.getSelection().toString() != "")
+    var html = '<sub>' + window.getSelection().toString() + '</sub> &nbsp;';
+    editor.insertHTML(html);
 }
 
 editor.setSuperscript = function() {
-    document.execCommand('superscript', false, null);
+    if(window.getSelection().toString() != "")
+    var html = '<sup>' + window.getSelection().toString() + '</sup> &nbsp;';
+    editor.insertHTML(html);
 }
 
 editor.setStrikeThrough = function() {
