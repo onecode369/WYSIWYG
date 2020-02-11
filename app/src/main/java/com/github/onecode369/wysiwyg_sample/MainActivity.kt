@@ -124,5 +124,20 @@ class MainActivity : AppCompatActivity() {
 
         action_insert_checkbox.setOnClickListener{ wysiwygEditor.insertTodo() }
 
+        var visible = false
+
+        preview.setOnClickListener {
+            if(!visible){
+                wysiwygEditor.setInputEnabled(false)
+                preview.setImageResource(R.drawable.visibility_off)
+            }else{
+                wysiwygEditor.setInputEnabled(true)
+                preview.setImageResource(R.drawable.visibility)
+            }
+            visible = !visible
+        }
+
+        insert_code.setOnClickListener{ wysiwygEditor.setCode() }
+
     }
 }

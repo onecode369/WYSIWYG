@@ -161,12 +161,23 @@ editor.setJustifyFull = function() {
 }
 
 editor.setBlockquote = function() {
-    document.execCommand('formatBlock', false, '<blockquote>');
+    if(window.getSelection().toString() != "")
+    var html = '<p style="color: #000 !important;background-color: #f1f1f1 !important;border-left: 6px solid #ccc !important;padding:10px">' + window.getSelection().toString() + '</p></br>';
+    editor.insertHTML(html);
+}
+
+editor.setCode = function() {
+    if(window.getSelection().toString() != ""){
+        var code = window.getSelection().toString().replace(/</ig, '&lt;').replace(/>/ig, '&gt;');
+        var html ='<div class="w3-panel w3-card w3-light-grey"><div class="w3-code htmlHigh notranslate">'+code+'</div></div></br>'
+    }
+    editor.insertHTML(html);
 }
 
 editor.insertImage = function(url, alt) {
-    var html = '<img src="' + url + '" alt="' + alt + '" />';
+    var html = '<img style="width:100%;max-width:400px" src="' + url + '" alt="' + alt + '" />';
     editor.insertHTML(html);
+    document.execCommand('enableObjectResizing', false, null);
 }
 
 editor.insertHTML = function(html) {
@@ -193,7 +204,12 @@ editor.insertLink = function(url, title) {
 }
 
 editor.setTodo = function(text) {
-    var html = '<input type="checkbox" name="'+ text +'" value="'+ text +'"/> &nbsp;';
+    var html = '<input class="w3-checkbox" type="checkbox" name="'+ text +'" value="'+ text +'"/> &nbsp;';
+    document.execCommand('insertHTML', false, html);
+}
+
+editor.setTodo = function(text) {
+    var html = '<input class="w3-checkbox" type="checkbox" name="'+ text +'" value="'+ text +'"/> &nbsp;';
     document.execCommand('insertHTML', false, html);
 }
 

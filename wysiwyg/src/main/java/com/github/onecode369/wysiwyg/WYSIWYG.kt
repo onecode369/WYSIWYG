@@ -43,6 +43,8 @@ class WYSIWYG @SuppressLint("SetJavaScriptEnabled") constructor(
         JUSTIFYRIGHT
     }
 
+
+
     interface OnTextChangeListener {
         fun onTextChange(text: String?)
     }
@@ -291,6 +293,10 @@ class WYSIWYG @SuppressLint("SetJavaScriptEnabled") constructor(
         exec("javascript:editor.setHeading('$heading');")
     }
 
+    fun setCode() {
+        exec("javascript:editor.setCode();")
+    }
+
     fun setIndent() {
         exec("javascript:editor.setIndent();")
     }
@@ -401,6 +407,7 @@ class WYSIWYG @SuppressLint("SetJavaScriptEnabled") constructor(
         private const val CALLBACK_SCHEME = "re-callback://"
         private const val STATE_SCHEME = "re-state://"
     }
+
 
     init {
         isVerticalScrollBarEnabled = false
