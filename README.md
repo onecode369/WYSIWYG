@@ -42,6 +42,7 @@ Toolbar Preview
 <img src="https://i.postimg.cc/yNY3G3xM/correct.png" width="2%"/> Insert Image <br/>
 <img src="https://i.postimg.cc/yNY3G3xM/correct.png" width="2%"/> Insert Link <br/>
 <img src="https://i.postimg.cc/yNY3G3xM/correct.png" width="2%"/> Insert Code <br/>
+<img src="https://i.postimg.cc/yNY3G3xM/correct.png" width="2%"/> Write equations with LaTeX ( works only when you are connected to internet ) <br/>
 <img src="https://i.postimg.cc/yNY3G3xM/correct.png" width="2%"/> Todolist List <br/>
 
 ## Changeable Atributes of Editor
@@ -84,5 +85,8 @@ You can see the [Activity File](https://github.com/onecode369/WYSIWYG/blob/maste
 ----
 ### Works on Android SDK 21 and above
 ---
+### My Thank's goes to [CodeCogs](https://www.codecogs.com) ( Open Source Scientific Library ) for LaTeX images
+<img src="https://www.codecogs.com/images/logo3.png" />
 
+---
 >Devloped by "One Code" - @onecode369
