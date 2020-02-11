@@ -8,6 +8,8 @@ editor.currentSelection = {
 
 editor.editor = document.getElementById('editor');
 
+
+
 document.addEventListener("selectionchange", function() { editor.backuprange(); });
 
 // Initializations
@@ -181,7 +183,11 @@ editor.setCode = function() {
 editor.insertImage = function(url, alt) {
     var html = '<img style="width:100%;max-width:400px" src="' + url + '" alt="' + alt + '" />';
     editor.insertHTML(html);
-    document.execCommand('enableObjectResizing', false, null);
+}
+
+editor.insertLatex = function(latex) {
+    var html = '<img src="https://private.codecogs.com/png.download?' + latex + '" alt="' + latex + '" />';
+    editor.insertHTML(html);
 }
 
 editor.insertHTML = function(html) {

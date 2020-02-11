@@ -139,7 +139,17 @@ class MainActivity : AppCompatActivity() {
             visible = !visible
         }
 
-        insert_code.setOnClickListener{ wysiwygEditor.setCode() }
+        insert_latex.setOnClickListener {
+            if(latext_editor.visibility == View.GONE) {
+                latext_editor.visibility = View.VISIBLE
+                submit_latex.setOnClickListener {
+                    wysiwygEditor.insertLatex(latex_equation.text.toString())
+                }
+            }else{
+                latext_editor.visibility = View.GONE
+            }
+        }
 
+        insert_code.setOnClickListener{ wysiwygEditor.setCode() }
     }
 }

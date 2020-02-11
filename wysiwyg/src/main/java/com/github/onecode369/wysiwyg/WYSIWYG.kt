@@ -333,6 +333,24 @@ class WYSIWYG @SuppressLint("SetJavaScriptEnabled") constructor(
         exec("javascript:editor.setNumbers();")
     }
 
+    fun insertLatex(latexEquation : String) {
+        var newS = ""
+        for(i in 0..(latexEquation.length-2)){
+            if(latexEquation[i] == latexEquation[i+1] && latexEquation[i] == ' '){
+
+            }else if(latexEquation[i] == ' '){
+                newS += " "
+            }else if(latexEquation[i] == '\\'){
+                newS += "\\\\"
+            } else{
+                newS += latexEquation[i].toString()
+            }
+        }
+        if(latexEquation[latexEquation.length-1] != ' ')
+            newS += latexEquation[latexEquation.length-1].toString()
+        exec("javascript:editor.insertLatex('"+ newS +"');")
+    }
+
     fun insertImage(url: String, alt: String) {
         exec("javascript:editor.prepareInsert();")
         exec("javascript:editor.insertImage('$url', '$alt');")

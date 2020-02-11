@@ -1,5 +1,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -8,10 +9,45 @@
         android:id="@+id/editor"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintBottom_toTopOf="@+id/latext_editor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/latext_editor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="0.5dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/latex_equation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="Latex Equation"
+                android:minWidth="320dp"
+                android:textColorHint="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/submit_latex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="#FFF" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
@@ -268,6 +304,15 @@
                 android:contentDescription="@null"
                 android:padding="15dp"
                 android:src="@drawable/insert_link" />
+
+            <ImageView
+                android:id="@+id/insert_latex"
+                android:layout_width="58dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/functions" />
 
             <ImageView
                 android:id="@+id/insert_code"
