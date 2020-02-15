@@ -339,7 +339,9 @@ class WYSIWYG @SuppressLint("SetJavaScriptEnabled") constructor(
             if(latexEquation[i] == latexEquation[i+1] && latexEquation[i] == ' '){
 
             }else if(latexEquation[i] == ' '){
-                newS += " "
+                newS += ""
+            }else if(latexEquation[i] == '\n'){
+                newS += ""
             }else if(latexEquation[i] == '\\'){
                 newS += "\\\\"
             } else{

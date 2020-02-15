@@ -186,7 +186,7 @@ editor.insertImage = function(url, alt) {
 }
 
 editor.insertLatex = function(latex) {
-    var html = '<img src="https://private.codecogs.com/png.download?' + latex + '" alt="' + latex + '" />';
+    var html = '<img src="https://private.codecogs.com/png.download?\\dpi{300} \\fn_jvn \\tiny ' + latex + '" alt="' + latex + '" />';
     editor.insertHTML(html);
 }
 

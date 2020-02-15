@@ -34,6 +34,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/colorPrimary"
                 android:hint="Latex Equation"
+                android:inputType="text"
                 android:minWidth="320dp"
                 android:textColorHint="@color/colorPrimary" />
 
