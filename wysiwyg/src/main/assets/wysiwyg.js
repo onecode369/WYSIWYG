@@ -14,7 +14,7 @@ document.addEventListener("selectionchange", function() { editor.backuprange(); 
 
 // Initializations
 editor.callback = function() {
-    window.location.href = "re-callback://" + encodeURI(editor.getHtml());
+    window.location.href = "re-callback://" + encodeURIComponent(editor.getHtml());
 }
 
 editor.setHtml = function(contents) {
@@ -294,7 +294,7 @@ editor.enabledEditingItems = function(e) {
         items.push(formatBlock);
     }
 
-    window.location.href = "re-state://" + encodeURI(items.join(','));
+    window.location.href = "re-state://" + encodeURIComponent(items.join(','));
 }
 
 editor.focus = function() {
