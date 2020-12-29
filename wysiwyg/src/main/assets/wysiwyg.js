@@ -294,7 +294,7 @@ editor.enabledEditingItems = function(e) {
         items.push(formatBlock);
     }
 
-    window.location.href = "re-state://" + encodeURI(items.join(','));
+    window.location.href = "re-state://" + encodeURIComponent(items.join(','));
 }
 
 editor.focus = function() {
