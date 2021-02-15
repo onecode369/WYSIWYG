@@ -1,16 +1,16 @@
 # WYSIWYG
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![](https://jitpack.io/v/onecode369/WYSIWYG.svg)](https://jitpack.io/#onecode369/WYSIWYG)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![](https://jitpack.io/v/sanskritcoder/WYSIWYG.svg)](https://jitpack.io/#sanskritcoder/WYSIWYG)
 
 ``WYSIWYG`` is a ``Rich Text Editor`` for ``Android`` made in ``Kotlin``
 
 ## Demo
 
-<img src="https://github.com/onecode369/WYSIWYG/blob/master/docs/GIF-200210_225312.gif" width="25%"/>
+<img src="https://github.com/sanskritcoder/WYSIWYG/blob/master/docs/GIF-200210_225312.gif" width="25%"/>
 
 Toolbar Preview
 
 
-<img src="https://github.com/onecode369/WYSIWYG/blob/master/docs/20200210_200910.gif" width="25%"/>
+<img src="https://github.com/sanskritcoder/WYSIWYG/blob/master/docs/20200210_200910.gif" width="25%"/>
 
 ## Supported Functions
 
@@ -69,17 +69,17 @@ allprojects {
 
 ```
 dependencies {
-  implementation 'com.github.onecode369:WYSIWYG:$WYSIWYG_version'
+  implementation 'com.github.sanskritcoder:WYSIWYG:$WYSIWYG_version'
 }
 ```
 
 ## How to implement WYSIWYG Editor to your app
 
 ### Adding editor to your layout
- You can see the [XML file](https://github.com/onecode369/WYSIWYG/blob/master/app/src/main/res/layout/activity_main.xml) to understand how to implement it to your app
+ You can see the [XML file](https://github.com/sanskritcoder/WYSIWYG/blob/master/app/src/main/res/layout/activity_main.xml) to understand how to implement it to your app
 
 ### Using it with your application
-You can see the [Activity File](https://github.com/onecode369/WYSIWYG/blob/master/app/src/main/java/com/github/onecode369/wysiwyg_sample/MainActivity.kt) to understand how to use it
+You can see the [Activity File](https://github.com/sanskritcoder/WYSIWYG/blob/master/app/src/main/java/com/github/sanskritcoder/wysiwyg_sample/MainActivity.kt) to understand how to use it
 <br/>
 
 ----
@@ -89,4 +89,4 @@ You can see the [Activity File](https://github.com/onecode369/WYSIWYG/blob/maste
 <img src="https://www.codecogs.com/images/logo3.png" />
 
 ---
->Devloped by "One Code" - @onecode369
+>Devloped by "Sanskrit Coder" - @sanskritcoder
