@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/WYSIWYG_Sample.iml" filepath="$PROJECT_DIR$/WYSIWYG_Sample.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/wysiwyg/wysiwyg.iml" filepath="$PROJECT_DIR$/wysiwyg/wysiwyg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/WYSIWYG_Sample.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/WYSIWYG_Sample.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wysiwyg/WYSIWYG_Sample.wysiwyg.iml" filepath="$PROJECT_DIR$/.idea/modules/wysiwyg/WYSIWYG_Sample.wysiwyg.iml" />
     </modules>
   </component>
 </project>

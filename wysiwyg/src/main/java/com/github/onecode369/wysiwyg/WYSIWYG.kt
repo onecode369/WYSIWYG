@@ -44,7 +44,6 @@ class WYSIWYG @SuppressLint("SetJavaScriptEnabled") constructor(
     }
 
 
-
     interface OnTextChangeListener {
         fun onTextChange(text: String?)
     }
@@ -297,6 +296,10 @@ class WYSIWYG @SuppressLint("SetJavaScriptEnabled") constructor(
         exec("javascript:editor.setCode();")
     }
 
+    fun setFontType(font: String) {
+        exec("javascript:editor.setFontType('$font');")
+    }
+
     fun setIndent() {
         exec("javascript:editor.setIndent();")
     }
@@ -333,24 +336,24 @@ class WYSIWYG @SuppressLint("SetJavaScriptEnabled") constructor(
         exec("javascript:editor.setNumbers();")
     }
 
-    fun insertLatex(latexEquation : String) {
+    fun insertLatex(latexEquation: String) {
         var newS = ""
-        for(i in 0..(latexEquation.length-2)){
-            if(latexEquation[i] == latexEquation[i+1] && latexEquation[i] == ' '){
+        for (i in 0..(latexEquation.length - 2)) {
+            if (latexEquation[i] == latexEquation[i + 1] && latexEquation[i] == ' ') {
 
-            }else if(latexEquation[i] == ' '){
+            } else if (latexEquation[i] == ' ') {
                 newS += ""
-            }else if(latexEquation[i] == '\n'){
+            } else if (latexEquation[i] == '\n') {
                 newS += ""
-            }else if(latexEquation[i] == '\\'){
+            } else if (latexEquation[i] == '\\') {
                 newS += "\\\\"
-            } else{
+            } else {
                 newS += latexEquation[i].toString()
             }
         }
-        if(latexEquation[latexEquation.length-1] != ' ')
-            newS += latexEquation[latexEquation.length-1].toString()
-        exec("javascript:editor.insertLatex('"+ newS +"');")
+        if (latexEquation[latexEquation.length - 1] != ' ')
+            newS += latexEquation[latexEquation.length - 1].toString()
+        exec("javascript:editor.insertLatex('" + newS + "');")
     }
 
     fun insertImage(url: String, alt: String) {

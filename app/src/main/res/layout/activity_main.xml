@@ -334,6 +334,15 @@
                 android:src="@drawable/ic_check_box" />
 
             <ImageView
+                android:id="@+id/action_change_font_type"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_font_download_24" />
+
+            <ImageView
                 android:id="@+id/preview"
                 android:layout_width="48dp"
                 android:layout_height="48dp"

@@ -151,5 +151,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         insert_code.setOnClickListener{ wysiwygEditor.setCode() }
+
+        action_change_font_type.setOnClickListener { wysiwygEditor.setFontType("Times New Roman") }
+
     }
 }
